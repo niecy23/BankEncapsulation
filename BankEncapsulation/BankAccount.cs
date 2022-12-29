@@ -3,17 +3,21 @@ namespace BankEncapsulation
 {
 	public class BankAccount
 	{
-        private double balance = 0;
+		//Making the balance field private.
+        private double balance;
 
+		//Constructor
         public BankAccount()
-		{ 
+		{
 		}
 
+		//Method to make a deposit.
 		public void Deposit(double amount)
 		{
-			balance = amount;
+			balance += amount;
 		}
 
+		//Method to retrieve current balance. 
 		public double GetBalance()
 		{
 			return balance;
